@@ -34,6 +34,18 @@ public class Transaction {
 	@Column(name= "AMOUNT")
 	private Double amount;
 
+	public Transaction() {
+		
+	}
+	
+	public Transaction(Long transId, Long customerId, Timestamp date, Double amount) {
+		super();
+		this.transId = transId;
+		this.customerId = customerId;
+		this.date = date;
+		this.amount = amount;
+	}
+
 	public Long getTransId() {
 		return transId;
 	}

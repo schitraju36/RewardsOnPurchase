@@ -27,6 +27,10 @@ public class RewardServiceImpl implements RewardsService {
 	@Autowired
 	TransactionRepository transactionRepository;
 
+	public RewardServiceImpl(TransactionRepository repo) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public Rewards getRewardsByCustomerId(Long customerId) {
 		// TODO Auto-generated method stub

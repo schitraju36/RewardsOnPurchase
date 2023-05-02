@@ -3,10 +3,23 @@
  */
 package com.customer.rewards.model;
 
+import com.customer.rewards.entity.Customer;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 /**
  * @author Welcome
  *
  */
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Rewards {
 	
 	private long customerId;
@@ -45,5 +58,6 @@ public class Rewards {
 	public void setTotalRewards(long totalRewards) {
 		this.totalRewards = totalRewards;
 	}
+	
     
 }
